@@ -1,0 +1,21 @@
+.bucketrow {
+  display: flex;
+  height: 100%;
+}
+
+.bucketrow-button {
+  font-size: 1.5rem;
+  height: 50px;
+  margin: 20px;
+  width: 35px;
+}
+
+.sixteenth {
+  height: 65%;
+  width: 65%;
+}
+
+.half {
+  height: 50%;
+  width: 50%;
+}

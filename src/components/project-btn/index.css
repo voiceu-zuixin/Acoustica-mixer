@@ -1,0 +1,41 @@
+.play-bpm {
+    align-items: center;
+    align-items: flex-start;
+    align-self: flex-start;
+    display: flex;
+  }
+  
+  .bpm-input {
+    font-size: 0.9rem;
+    height: 26px;
+    margin: 0 5px;
+    padding: 5px 0 5px 10px;
+    width: 55px;
+  }
+  
+  .bpm-label {
+    font-size: 0.9rem;
+  }
+  
+  .playstop-button {
+    height: 25px;
+    margin: 0 10px 0 0;
+    width: 25px;
+    cursor:pointer
+
+  }
+  
+  .play {
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid white;
+    border-top: 6px solid transparent;
+    height: 0;
+    width: 0; 
+  }
+  
+  .stop {
+    background-color: white;
+    height: 10px;
+    width: 10px;
+  }
+  

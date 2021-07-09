@@ -1,0 +1,26 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+  }
+  
+  .project-header {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+  }
+  
+  .project-title {
+    display: flex;
+    background-color: inherit;
+    color: inherit;
+    font-size: 1.4rem;
+    /* line-height: 20px; */
+    margin: 0 10px;
+    width: 20%;
+  }

@@ -1,0 +1,29 @@
+.app {
+  background: linear-gradient(to bottom right, #677e86, #3d434b);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  /* background-image: url(./pic/星空.png); */
+  background-image: linear-gradient(to top,#30cfd0 0,#330867 100%);
+}
+
+.btn {
+  background-color: #04395E;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-size: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex: auto;
+  min-height: 0;
+  width: 100%;
+}
+
+.subwrapper {
+  height: 100%;
+  width: 100%;
+}

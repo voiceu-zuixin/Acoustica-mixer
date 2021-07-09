@@ -1,0 +1,25 @@
+.bucket-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bucket {
+    align-items: center;
+    background-color: #7F8285;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 4px;
+    min-height: 105px;
+    padding: 4px 0;
+    width: 70px;
+  }
+  
+    .bucket-playing {
+      background-color: #888;
+      background-color: rgba(255, 255, 255, 0.45);
+      border: 1px solid #AAA;
+    }
+  

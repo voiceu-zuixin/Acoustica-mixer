@@ -1,0 +1,14 @@
+.note-column {
+    border-left: 1px solid #222;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 20px;
+    width: 300px;
+  }
+  
+  .rest-box {
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  

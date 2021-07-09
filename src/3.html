@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <table id="tableNode">
+        tableNode
+        <tr id="tdNode">
+            <td >
+                tdNode
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        // 捕获
+        document.addEventListener('click', function () {
+            alert('capture：' + 1)
+        }, true);
+        tableNode.addEventListener('click', function () {
+            alert('capture：' + 2);
+        }, true);
+        tdNode.addEventListener('click', function () {
+            alert('capture：' + 3);
+        }, true);
+
+        // 冒泡
+        document.addEventListener('click', function () {
+            alert('bubble：' + 1);
+        });
+        tableNode.addEventListener('click', function () {
+            alert('bubble：' + 2);
+        });
+        tdNode.addEventListener('click', function () {
+            alert('bubble：' + 3);
+        });
+    </script> -->
+    <a href=""></a>
+    <script>
+        function person(name) {
+            // this.name = name
+            let obj = {}
+            obj.name = name
+            obj.getname = () => {
+                console.log(this);
+            }
+            // 有return的时候就不能算是一个构造函数，虽然后面是new，但是只是执行一遍person函数而已
+            // p得到的就是return回去的obj，所以p就是obj
+            // 那么p.getname()一执行，就是执行obj.getname()，又因为箭头函数没有自己的this，往外找到person
+
+            // 那么这样把obj赋值给p，通过p调用函数，this指向的韩式该对象，是因为赋值的是对象的地址而已
+            // 但是如果像下面那样，把对象下的方法赋值给另一个对象，就会去找谁调用的该方法，
+            // 相当于绕开了原本的对象，直接调用这个方法，所以是window
+            return obj
+        }
+        // let p = new person('lisi')
+        // console.log(p);
+        // p.getname()
+
+        let obj = {
+            name: 'LISI',
+            say() {
+                console.log(this);
+            }
+        }
+        // obj.say()
+        // let p2 = obj
+        // p2.say()
+        // let fn = obj.say
+        // fn()
+
+
+        let obj2 = {
+            name: 'lisi',
+            say: () => {
+                console.log(this);
+            }
+        }
+        let obj1 = {
+            name: 'wangwu'
+        }
+        obj.say()
+        obj.say.call(obj1)
+        obj2.say()
+        obj2.say.call(obj1)
+
+    </script>
+</body>
+
+</html>

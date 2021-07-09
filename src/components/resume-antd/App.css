@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+.page {
+  width: 21cm;
+  min-height: 29.7cm;
+  padding: 0.5cm;
+  border: 1px #d3d3d3 solid;
+  background: white;
+  font-size: 16px;
+}
+.page li {
+  padding-bottom: 3px !important;
+}
+.avoid-break {
+  page-break-inside: avoid;
+}
+@page {
+  size: A4;
+  margin: 0;
+  margin-top: 2rem;
+}
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
+.blog {
+  background-color: #f5e8e8;
+  color: antiquewhite;
+  border: 1px dashed ;
+}
+.self_assessment {
+  font-size: 14px;
+}
+.divider {
+  margin-top: 0px !important;
+  margin-bottom: 5px !important;
+}
+.divider_skill {
+  margin-top: 0px !important;
+}
+/*# sourceMappingURL=./App.css.map */

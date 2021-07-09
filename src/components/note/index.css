@@ -1,0 +1,14 @@
+.note {
+    align-items: center;
+    color: #EEE;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0 0 0 7px;
+    width: 60px;
+    /* width: 53px; */
+    /* color: rgb(60, 70, 130) */
+    cursor:pointer
+
+  }
+  

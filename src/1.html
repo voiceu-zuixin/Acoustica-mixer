@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>4</button>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        // alert(4)
+        // const handleChange = () => {
+        //     // let newState;
+        //     // try {
+        //     //     newState = 1
+        //     // }
+        //     // catch (e) {
+        //     //     return;
+        //     // }
+        //     var arr = ['a', 'b', 'c'];
+        //     try {
+        //         for (var key in arr) {
+        //             console.log(key);
+        //             if (arr[key] === 'a') {
+        //                 throw new Error('跳出循环');
+        //             }
+        //         }
+        //     } catch (err) {
+        //         console.log('???');
+        //         console.log(err);
+        //         return
+        //     }
+
+        //     console.log('???');
+        //     // if (newState !== currentState) {
+        //     //     onChange(newState, currentState);
+        //     //     currentState = newState;
+        //     // }
+        // };
+
+        // handleChange();
+
+        // var arr = ['a', 'b', 'c'];
+        // try {
+        //     for (var key in arr) {
+        //         console.log(key);
+        //         if (arr[key] === 'a') {
+        //             throw new Error('跳出循环');
+        //         }
+        //     }
+        // } catch (err) {
+        //     // console.log('???');
+        //     // console.log(err);
+        //     return
+        // }
+
+        // let project = {}
+        // console.log(project.l);
+        // let currentState;
+        // console.log(currentState);
+        // const arr = [1, 1, 2, 2]
+        // const arr4 = new Set([2, 3])
+        // // const set = new Set([...arr].filter(item => !arr4.has(item)))
+        // const set = new Set([...arr].filter(item => arr4.has(item)))
+        // console.log(set);
+
+        // nums = [2, 3, 1, 0, 2, 5, 3]
+        // let m = new Map()
+        // // nums.forEach(n => {
+        // //     if (m.has(n)) {
+        // //         return n
+        // //     }
+        // //     m.set(n, true)
+        // // })
+        // var findRepeatNumber = function (nums) {
+        //     for (let n of nums) {
+        //         if (m.has(n)) {
+        //             return n
+        //         }
+        //         m.set(n, true)
+        //     }
+        // }
+        // x = findRepeatNumber(nums)
+        // console.log(x);
+
+        // var firstUniqChar = function (s) {
+        //     let m = new Map()
+        //     for (let i = 0; i < s.length; i++) {
+        //         m.set(s[i], m.has(s[i]) ? m.get(s[i]) + 1 : 1)
+        //     }
+        //     // for(let [keys,values] of m.entries){
+        //     //     if(values === 1) return keys
+        //     // }
+        //     m.forEach((value,key) => {
+        //         if (value === 1) return key
+        //     }, m)
+        // };
+        // s = "leetcode"
+        // firstUniqChar(s)
+        // let str = '0'
+        // let a = '2312' + 0
+        // let b = '2312' - 0
+        // let x = '2312' + '0'
+        // let y = '2312' - '0'
+        // console.log(a);
+        // console.log(typeof (a));
+        // console.log('-----');
+        // console.log(b);
+        // console.log(typeof (b));
+        // console.log('-----');
+        // console.log(x);
+        // console.log(typeof (x));
+        // console.log('-----');
+        // console.log(y);
+        // console.log(typeof (y));
+        // let c = '2' + 0 + 12 + 11
+        // console.log(c);
+        // console.log(typeof (c));
+        // let d = 0 + 12 + '2' + 11
+        // console.log(d);
+        // console.log(typeof (d));
+        // let e = 1-'2'
+        // console.log(e);
+        // console.log(typeof (e));
+        // let f = '2' - '1'
+        // console.log(f);
+        // console.log(typeof (f));
+
+        // const id = '123123'
+        // let obj1 = {
+        //     [id]: 'asa'
+        // }
+        // let obj2 = {
+        //     id: 'asa'
+        // }
+        // console.log(obj1);
+        // console.log(obj2);
+        // console.log(obj1[id]);
+        // console.log(id);
+        // console.log([id]);
+        // let b = 'c'
+        // var obj3 = {
+        //     a: 1,
+        //     c: 2
+        // }
+        // console.log(obj3.a);
+        // console.log(obj3[b]);
+        // var addStrings = function (num1, num2) {
+        //     num1 *= 1
+        //     num2 *= 1
+        //     let num = num1+num2
+        //     return (num1 + num2) + ''
+        // };
+        // x = addStrings("9333852702227987","85731737104263")
+        // console.log(x);
+        // let a = 9333852702227987
+        // let d = 9007199254740992
+        // let b = 85731737104263
+        // let c = a+b
+        // console.log(c);
+        // function test1() {
+        //     'use strict'
+        //     console.log(this);//指向调用该函数的对象，这里是this
+        // }
+        // test1()
+        // class test3 {
+        //     constructor() {
+        //         this.inside2 = this.inside2.bind(this)
+        //     }
+        //     inside1() {
+        //         console.log(this);
+        //         const xx = this.inside2
+        //         return xx
+        //     }
+        //     inside2() {
+        //         console.log(this);
+        //     }
+        // }
+
+        // const t = new test3()
+        // t.inside1()()
+        // t.inside2()
+        // var btn = document.getElementById('btn')
+        // function x (){
+        //     alert(3)
+        // }
+        // btn.onclick = x
+    </script>
+    <button id="btn">?</button>
+    <script>
+        // // alert(5)
+        // var btn = document.getElementById('btn')
+        // function x (){
+        //     alert(3)
+        // }
+        // btn.onclick = x
+        // console.log('script start')
+
+        // setTimeout(function () {
+        //     console.log('setTimeout')
+        // }, 0)
+
+        // new Promise(resolve => {
+        //     console.log('Promise')
+        //     resolve()
+        // })
+        //     .then(function () {
+        //         console.log('promise1')
+        //     })
+        //     .then(function () {
+        //         console.log('promise2')
+        //     })
+
+        // console.log('script end')
+        // setTimeout(function () { console.log(1) }, 0);
+        // new Promise(function (resolve) {
+        //     console.log(2)
+        //     for (var i = 0; i < 10000; i++) {
+        //         i == 9999 && resolve()
+        //     }
+        //     console.log(3)
+        // }).then(function () {
+        //     console.log(4)
+        // });
+        // console.log(5);
+
+        // Promise.resolve().then(() => {
+        //     console.log(0);
+        //     return Promise.resolve(4);
+        // }).then((res) => {
+        //     console.log(res)
+        // })
+
+        // Promise.resolve().then(() => {
+        //     console.log(1);
+        // }).then(() => {
+        //     console.log(2);
+        // }).then(() => {
+        //     console.log(3);
+        // }).then(() => {
+        //     console.log(5);
+        // }).then(() => {
+        //     console.log(6);
+        // }).then(() => {
+        //     console.log(7);
+        // })
+        // script start => Promise => script end => promise1 => promise2 => setTimeout
+
+        class Foo {
+            static classMethod() {
+                return 'hello';
+            }
+            fcc() {
+                return 'fcc'
+            }
+            fcx = () => {
+                return 'fcx'
+            }
+        }
+
+        class Bar extends Foo {
+            static classMethod() {
+                return super.classMethod() + ', too';
+            }
+        }
+
+        Bar.classMethod() // "hello, too"
+        let f = new Foo()
+        let x = f.fcc()
+        console.log(x);
+        let c = f.fcx()
+        console.log(c);
+        f.classMethod()
+        console.log(12312);
+    </script>
+</body>
+
+</html>
