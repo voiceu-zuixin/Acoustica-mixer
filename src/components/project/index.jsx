@@ -65,9 +65,9 @@ class Project extends Component {
     }
 
     // 打印store
-    logStore = () => {
-        console.log(this.props);
-    }
+    // logStore = () => {
+    //     console.log(this.props);
+    // }
 
     // 新建空白乐章，就是把redux里的store都改了。相当于初始化
     initProject = () => {
@@ -75,11 +75,11 @@ class Project extends Component {
     }
 
     // 换成体验曲目2
-    changeToSpeed_fuTure_=()=>{
+    changeToSpeed_fuTure_ = () => {
         this.props.toSpeed_fuTure_()
     }
     // 换成体验曲目2
-    changeToMario=()=>{
+    changeToMario = () => {
         this.props.toMario()
     }
 
@@ -114,15 +114,12 @@ class Project extends Component {
 
                     <ProjectBtn />
 
-
-                    {/* <div onClick={this.logStore}>点我打印store</div> */}
-                    <button onClick={this.logStore}>点我打印store</button>
                     <br />
-                    <Button
+                    {/* <Button
                         icon={<SaveOutlined />}
                         size='small'
                         onClick={this.logStore}
-                    >保存</Button>
+                    >保存</Button> */}
                     <br />
                     {/* <Button
                         icon={<SaveOutlined />}
@@ -135,7 +132,7 @@ class Project extends Component {
                         size='small'
                         onClick={this.changeToSpeed_fuTure_}
                     >体验曲目2 寄生兽bgm</Button>
-                    <br />
+                    {/* <br /> */}
                     <Button
                         icon={<EditOutlined />}
                         size='small'

@@ -1,12 +1,6 @@
 // React相关
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter,
-  // HashRouter,
-  Route,
-  Switch
-} from 'react-router-dom'
 
 // Redux相关
 import { Provider } from 'react-redux'
@@ -21,12 +15,6 @@ import './index.css';
 
 // 引入主模块App入口,经过路由导入
 import App from './components/app';
-
-// 引入简历模块
-import Resume from './components/resume'
-
-// 引入resume-antd
-import ResumeAntd from './components/resume-antd'
 
 // 引入Tone，用来Tone.context.resume();
 import * as Tone from 'tone'
@@ -48,13 +36,7 @@ document.documentElement.addEventListener('mousedown', () => {
 ReactDOM.render((
   // 传入store
   <Provider store={store}>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Switch>
-        <Route exact path='/' component={ResumeAntd} />
-        <Route exact path='/resume' component={Resume} />
-        <Route path='/voiceu' component={App} />
-      </Switch>
-    </BrowserRouter>
+    <App/>
   </Provider>
 
 ), document.getElementById('root'));

@@ -74,7 +74,8 @@ const bucketTarget = {
         // monitor.didDrop()如果这个存在，即有其他target处理了这个事件
 
         // 因为bucket和note-in-bucket在一起，所以要先取消一个
-        console.log('bucket', monitor.getDropResult());
+        // console.log('bucket', monitor.getDropResult());
+
         if (monitor.didDrop())
             return
         console.log('bucketgetItem', monitor.getItem());

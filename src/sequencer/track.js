@@ -13,7 +13,7 @@ export default class Track {
     constructor(store, id) {
         this.store = store
         this.id = id
-        console.log(id);
+        // console.log(id);
         const { sequence, baseNote, synth } = selectTrack(id)(store.getState())
 
         this.sequence = sequence;
@@ -111,12 +111,12 @@ export default class Track {
     }
 
     deleteSelf() {
-        console.log('deleteSelf');
+        // console.log('deleteSelf');
         // 解除监听
         // unsubscribe from all subscriptions
         this.subscriptions.forEach(unsubscribe => unsubscribe());
 
-        console.log('deleteSelf12313');
+        // console.log('deleteSelf12313');
         // 处理合成器
         // dispose of the synth
         this.synth.dispose();
@@ -130,7 +130,7 @@ export default class Track {
     // sequence发生改变就执行
     onSequenceChange = (sequence) => {
         // console.log('sequencechange');
-        console.log('part', this.part);
+        // console.log('part', this.part);
         this.part.removeAll()
         this.part = this.initPart(sequence, this.baseNote)
         this.sequence = sequence

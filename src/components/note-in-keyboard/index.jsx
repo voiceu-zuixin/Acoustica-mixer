@@ -66,7 +66,7 @@ const noteInKeyboardSource = {
         // console.log('monitor.didDrop()', monitor.didDrop());
         // console.log('monitor', monitor);
 
-        console.log('getDropResult', monitor.getDropResult());
+        // console.log('getDropResult', monitor.getDropResult());
         // console.log('getDropResult', monitor);
         // console.log('getDropResult', monitor.getItem());
         // console.log('x', monitor[x]);

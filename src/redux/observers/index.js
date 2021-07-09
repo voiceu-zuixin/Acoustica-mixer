@@ -11,13 +11,13 @@ export default function (store, selector, onChange) {
             // 获取新状态,通过传进来的selector函数，给它传进store的state
             // 这里是不是也得考虑深浅拷贝的问题
             newState = selector(store.getState())
-            console.log('selector',selector);
-            console.log('newState',newState);
+            // console.log('selector',selector);
+            // console.log('newState',newState);
         } catch (error) {//在监听取消的时候，handleChange还会执行一次，就会报错
             // 如果发生error，直接跳出整个observeStore函数
             // console.log(selector);
             // console.log(newState);
-            console.log(error);
+            // console.log(error);
             return
         }
 

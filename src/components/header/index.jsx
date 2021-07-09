@@ -7,7 +7,7 @@ export default class Header extends Component {
         return (
             <div className="header">
                 <span className="header-title">
-                    React-Music
+                    Acoustica-mixer
                 </span>
             </div>
         )

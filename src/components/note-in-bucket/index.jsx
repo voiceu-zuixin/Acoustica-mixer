@@ -73,7 +73,7 @@ const noteInBucketTarget = {
             // return;
         }
 
-        console.log('note-in-bucket', monitor.getDropResult());
+        // console.log('note-in-bucket', monitor.getDropResult());
 
         return {
             note_in_bucket: 1

@@ -77,7 +77,7 @@ export default class Sequencer {
 
     // 会自动调用，因为在observe监听器里面调用了
     handleProjectIdOrTrackCountChange() {
-        console.log('gaibianle');
+        // console.log('gaibianle');
         // 删除这些实例
         this.tracks.forEach(track => { track.deleteSelf(); });
         // 如果我删除后就关闭那个监听器不就行了？

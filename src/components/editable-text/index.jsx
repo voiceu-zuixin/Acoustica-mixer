@@ -24,7 +24,7 @@ export default class EditableText extends Component {
     }
 
     handleBlur = () => {
-        console.log(this.props);
+        // console.log(this.props);
         this.state.value !== ''
             ? this.props.onBlur(this.state.value)
             : this.setState({ value: this.props.value })
